@@ -17,11 +17,11 @@ export default function AboutStack() {
                     height: 60,
                 },
                 header: ({ navigation, route, options, back }) => {
-                    const title = getHeaderTitle(options, route.name);
+                    // const title = getHeaderTitle(options, route.name);
 
                     return (
                         <Header
-                            title={title}
+                            title='About GameZone'
                             navigation={navigation}
                         />
                     );
@@ -31,9 +31,9 @@ export default function AboutStack() {
             <Stack.Screen
                 name="AboutPage"
                 component={About}
-                options={{
-                    headerTitle: () => <Header />
-                }}
+            // options={{
+            //     headerTitle: () => <Header />
+            // }}
             />
         </Stack.Navigator>
     )

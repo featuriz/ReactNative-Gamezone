@@ -44,3 +44,16 @@ A mobile application for Game Ratings. Includes,
   - Home, About page displays common header and list to draw
   - Details page header with back button.
   - In details page common header is not displaying (This is right).
+
+## 4 Card
+
+- A card style is added as a template
+  - Home list
+  - Review Details
+
+## 5 Images
+
+- Ratings are displayed in images
+  - Created const in global
+  - calling this array on place of image, to display dynamic image.
+    - because, '+ item.rating +' , will not work, it throws error.

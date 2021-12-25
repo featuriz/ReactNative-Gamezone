@@ -14,7 +14,7 @@ export default function RootDrawer() {
                 headerShown: false,
                 headerStyle: {
                     backgroundColor: '#eee',
-                    height: 100,
+                    height: 60,
                 },
             }}
         >

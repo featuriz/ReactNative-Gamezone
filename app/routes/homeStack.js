@@ -24,12 +24,13 @@ export default function HomeStack() {
                 name="HomePage"
                 component={Home}
                 options={{
+                    // headerTitle: () => <Header />,
                     header: ({ navigation, route, options, back }) => {
-                        const title = getHeaderTitle(options, route.name);
+                        // const title = getHeaderTitle(options, route.name);
 
                         return (
                             <Header
-                                title={title}
+                                title='GameZone'
                                 navigation={navigation}
                             />
                         );
