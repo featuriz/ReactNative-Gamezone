@@ -70,3 +70,9 @@ A mobile application for Game Ratings. Includes,
   - animation slide
   - MaterialIcons - add, close. Which toggle the button state
   - styles to model, buttons
+
+## 8 Formik
+
+- Added Formik bundle
+- Created ReviewForm and added to home
+- with some global styles to the form

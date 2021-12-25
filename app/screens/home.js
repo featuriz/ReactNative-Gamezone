@@ -4,6 +4,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import Card from '../shared/card';
 import { globalStyles } from '../styles/global'
 import { MaterialIcons } from '@expo/vector-icons';
+import ReviewForm from './reviewForm';
 
 export default function Home({ navigation }) {
     const [reviews, setReviews] = useState([
@@ -18,7 +19,7 @@ export default function Home({ navigation }) {
             <Modal animationType="slide" visible={modalVisible}>
                 <View style={globalStyles.modalContent}>
                     <MaterialIcons name="close" onPress={() => setModalVisible(false)} size={24} style={{ ...globalStyles.modalToggle, ...globalStyles.modalClose }} />
-                    <Text>Hello from the model :)</Text>
+                    <ReviewForm />
                 </View>
             </Modal>
 
