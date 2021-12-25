@@ -90,3 +90,11 @@ A mobile application for Game Ratings. Includes,
 - Added form validation using yup
 - Cannot submit if validation fails
 - next show error msg.
+
+## 10 Added custom button
+
+- Created a TouchableOpacity item with FlatButton as button.js
+- requires text and onpress
+- Added this to reviewForm.js
+  - `<FlatButton text="Submit" onPress={handleSubmit} />`
+  - It works!

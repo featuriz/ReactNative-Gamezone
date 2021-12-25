@@ -3,6 +3,7 @@ import React from 'react'
 import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native'
 import { globalStyles } from '../styles/global'
 import * as Yup from 'yup';
+import FlatButton from '../shared/button';
 
 const ReviewSchema = Yup.object().shape({
     title: Yup.string()
@@ -69,7 +70,8 @@ export default function ReviewForm({ addReview }) {
                                 keyboardType='numeric'
                             />
                             {errors.rating && touched.rating && <Text style={globalStyles.errorText}>{errors.rating}</Text>}
-                            <Button title='Submit' color='maroon' onPress={handleSubmit} />
+                            {/* <Button title='Submit' color='maroon' onPress={handleSubmit} /> */}
+                            <FlatButton text="Submit" onPress={handleSubmit} />
                         </View>
                     )
                 }
