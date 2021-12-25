@@ -57,3 +57,8 @@ A mobile application for Game Ratings. Includes,
   - Created const in global
   - calling this array on place of image, to display dynamic image.
     - because, '+ item.rating +' , will not work, it throws error.
+
+## 6 Background Image
+
+- Added background Image to header
+- Added an Image to Header
