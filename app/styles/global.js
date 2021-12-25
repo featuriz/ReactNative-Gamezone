@@ -22,6 +22,21 @@ export const globalStyles = StyleSheet.create({
         marginTop: 16,
         borderTopWidth: 1,
         borderTopColor: '#eee'
+    },
+    modalContent: {
+        flex: 1,
+    },
+    modalToggle: {
+        marginBottom: 10,
+        borderWidth: 1,
+        borderColor: '#f2f2f2',
+        padding: 10,
+        borderRadius: 10,
+        alignSelf: 'center'
+    },
+    modalClose: {
+        marginTop: 20,
+        marginBottom: 0
     }
 });
 

@@ -62,3 +62,11 @@ A mobile application for Game Ratings. Includes,
 
 - Added background Image to header
 - Added an Image to Header
+
+## 7 Modal
+
+- Added modal in homepage
+  - Toggle State
+  - animation slide
+  - MaterialIcons - add, close. Which toggle the button state
+  - styles to model, buttons
