@@ -1,6 +1,6 @@
 import { Formik } from 'formik'
 import React from 'react'
-import { Alert, Button, StyleSheet, TextInput, View } from 'react-native'
+import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native'
 import { globalStyles } from '../styles/global'
 import * as Yup from 'yup';
 
@@ -41,7 +41,7 @@ export default function ReviewForm({ addReview }) {
                 }
             >
                 {
-                    ({ handleChange, handleBlur, handleSubmit, values }) => (
+                    ({ handleChange, handleBlur, handleSubmit, values, errors, touched }) => (
                         <View>
                             <TextInput
                                 style={globalStyles.input}
@@ -50,6 +50,7 @@ export default function ReviewForm({ addReview }) {
                                 onBlur={handleBlur('title')}
                                 value={values.title}
                             />
+                            {errors.title && touched.title && <Text style={globalStyles.errorText}>{errors.title}</Text>}
                             <TextInput
                                 style={globalStyles.input}
                                 multiline
@@ -58,6 +59,7 @@ export default function ReviewForm({ addReview }) {
                                 onBlur={handleBlur('body')}
                                 value={values.body}
                             />
+                            {errors.body && touched.body && <Text style={globalStyles.errorText}>{errors.body}</Text>}
                             <TextInput
                                 style={globalStyles.input}
                                 placeholder='Rating (1-5)'
@@ -66,6 +68,7 @@ export default function ReviewForm({ addReview }) {
                                 value={values.rating}
                                 keyboardType='numeric'
                             />
+                            {errors.rating && touched.rating && <Text style={globalStyles.errorText}>{errors.rating}</Text>}
                             <Button title='Submit' color='maroon' onPress={handleSubmit} />
                         </View>
                     )
