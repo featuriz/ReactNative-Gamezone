@@ -84,3 +84,9 @@ A mobile application for Game Ratings. Includes,
 - Disable Keboard
   - using TouchableWithoutFeedback `onPress={Keyboard.dismiss}` at home.js
 - Done!
+
+## 9 Yup - Form Validatoin
+
+- Added form validation using yup
+- Cannot submit if validation fails
+- next show error msg.
