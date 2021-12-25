@@ -3,20 +3,20 @@ import React from 'react'
 import { Alert, Button, StyleSheet, TextInput, View } from 'react-native'
 import { globalStyles } from '../styles/global'
 
-export default function ReviewForm() {
+export default function ReviewForm({ addReview }) {
     return (
         <View style={globalStyles.container}>
             <Formik
                 initialValues={{ title: '', body: '', rating: '' }}
                 // onSubmit={values => console.log(values)}
-                onSubmit={(values, { setSubmitting }) => {
+                onSubmit={(values, { setSubmitting, resetForm }) => {
 
                     setTimeout(() => {
-
-                        Alert.alert(JSON.stringify(values, null, 1));
-
+                        addReview(values);
+                        // console.log(values);
+                        // Alert.alert(JSON.stringify(values, null, 1));
                         setSubmitting(false);
-
+                        resetForm()
                     }, 400);
 
                 }}

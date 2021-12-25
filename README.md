@@ -76,3 +76,11 @@ A mobile application for Game Ratings. Includes,
 - Added Formik bundle
 - Created ReviewForm and added to home
 - with some global styles to the form
+
+### Form Submit
+
+- AddReview: Add values to the list
+- ResetForm
+- Disable Keboard
+  - using TouchableWithoutFeedback `onPress={Keyboard.dismiss}` at home.js
+- Done!
