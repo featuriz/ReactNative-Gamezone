@@ -98,3 +98,5 @@ A mobile application for Game Ratings. Includes,
 - Added this to reviewForm.js
   - `<FlatButton text="Submit" onPress={handleSubmit} />`
   - It works!
+
+## End
