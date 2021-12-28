@@ -1,9 +1,15 @@
 {
   "expo": {
-    "name": "gamezone",
+    "name": "Game Zone",
     "slug": "gamezone",
     "version": "1.0.0",
     "orientation": "portrait",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "icon": "./app/assets/icon.png",
     "splash": {
       "image": "./app/assets/splash.png",
@@ -17,16 +23,22 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.featuriz.gamezone",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.featuriz.gamezone",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./app/assets/favicon.png"
-    }
+    },
+    "description": "A mobile application for Game Ratings.",
+    "githubUrl": "https://github.com/featuriz/ReactNative-Gamezone"
   }
 }

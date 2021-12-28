@@ -1,6 +1,9 @@
 # Gamezone
 
-A mobile application for Game Ratings. Includes,
+A mobile application for Game Ratings.
+[EXPO](https://expo.dev/accounts/sudhakarkrishnan/projects/gamezone)
+
+### Includes,
 
 - Navigation
 - List

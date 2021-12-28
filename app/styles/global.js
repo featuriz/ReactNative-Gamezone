@@ -53,6 +53,26 @@ export const globalStyles = StyleSheet.create({
         marginBottom: 10,
         marginTop: 6,
         textAlign: 'center'
+    },
+    aboutTitleText: {
+        fontFamily: 'Nunito-Bold',
+        fontSize: 32,
+        color: '#F00',
+        alignSelf: 'center'
+    },
+    aboutLinkText: {
+        fontFamily: 'Nunito-Bold',
+        fontSize: 18,
+        color: 'blue',
+        backgroundColor: '#FFF',
+        paddingVertical: 15,
+        paddingHorizontal: 10,
+        marginTop: 10,
+        borderRadius: 5,
+    },
+    aboutItems: {
+        padding: 10,
+        fontSize: 18,
     }
 });
 
